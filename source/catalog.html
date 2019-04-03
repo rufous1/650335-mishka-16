@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог товаров</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <img class="page-header__logo-image" src="" alt="Mishka">
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <form class="site-list__form-search" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" name="search" placeholder="Поиск по сайту">
+            <button class="visually-hidden">Найти</button>
+          </form>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-catalog">
+    <h1 class="page-catalog__title">Каталог товаров</h1>
+    <section class="catalog-product">
+      <ul class="catalog-product__list">
+        <li class="catalog-product__item">
+          <article class="catalog-product__card card">
+            <img class="card__img" src="http://placehold.it/150x100" width="260" height="195" alt="Зайчик-попрыгайчик">
+            <div class="card__info">
+              <h2 class="card__title">Зайчик-попрыгайчик</h2>
+              <p class="card__text-info">Рост 30 см, вес 200 г</p>
+              <a class="card__add-cart" href="#">
+                <span class="card__price">1 200 руб.</span>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="catalog-product__item">
+          <article class="catalog-product__card card">
+            <img class="card__img" src="http://placehold.it/150x100" width="260" height="195" alt="Корзинка для белья">
+            <div class="card__info">
+              <h2 class="card__title">Корзинка для белья</h2>
+              <p class="card__text-info">Диаметр 15 см, высота 10 см</p>
+              <a class="card__add-cart" href="#">
+                <span class="card__price">690 руб.</span>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="catalog-product__item">
+          <article class="catalog-product__card card">
+            <img class="card__img" src="http://placehold.it/150x100" width="260" height="195" alt="Большая корзинка
+            для игрушек">
+            <div class="card__info">
+              <h2 class="card__title">Большая корзинка для игрушек</h2>
+              <p class="card__text-info">Диаметр 30 см, высота 30 см</p>
+              <a class="card__add-cart" href="#">
+                <span class="card__price">1 500 руб.</span>
+              </a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <section class="video">
+      <h2 class="video__title">Процесс производства</h2>
+      <video class="video__media" width="260" height="150" controls="controls" poster="http://placehold.it/150x100">
+        <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+        <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="#" type='video/webm; codecs="vp8, vorbis"'>
+        Тег video не поддерживается вашим браузером.
+      </video>
+      <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="video__button" href="#">Сделать заказ</a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML и CSS, уровень 2</span>
+      </a>
+    </div>
+  </footer>
+  <!-- модальное окно -->
+  <section class="modal">
+    <h3 class="modal-title">Добавить в корзину</h3>
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend class="modal__form-text">Выберите размер:</legend>
+        <ul class="modal__form-list">
+          <li class="modal__form-item">
+            <input type="radio" name="size" id="size-s" value="small" checked>
+            <label for="size-s">Small</label>
+          </li>
+          <li class="modal__form-item">
+            <input type="radio" name="size" id="size-m" value="medium">
+            <label for="size-m">Medium</label>
+          </li>
+          <li class="modal__form-item">
+            <input type="radio" name="size" id="size-l" value="large">
+            <label for="size-l">Large</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="modal__button" type="submit">Добавить</button>
+    </form>
+  </section>
+</body>
+
+</html>
