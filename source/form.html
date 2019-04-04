@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body>
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo">
+      <img class="page-header__logo-image" src="" alt="Mishka"></a>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <form class="site-list__form-search" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" name="search" placeholder="Поиск по сайту">
+            <button class="visually-hidden">Найти</button>
+          </form>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-form">
+    <h1 class="page-form__title">Вязание на заказ</h1>
+    <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <section class="form-order">
+      <form class="form-order__form">
+        <fieldset class="form-order__type">
+          <legend class="form-order__title">Тип</legend>
+          <input type="radio" name="type-product" id="type-interior" value="interior" checked>
+          <label for="type-interior">Аксессуар для интерьера</label>
+          <input type="radio" name="type-product" id="type-toy" value="toy">
+          <label for="type-toy">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="form-order__color">
+          <legend class="form-order__title">Цвет</legend>
+          <input type="checkbox" name="white" id="white" checked>
+          <label for="white">Белый</label>
+          <input type="checkbox" name="grey" id="grey" checked>
+          <label for="grey">Серый</label>
+          <input type="checkbox" name="tiffany" id="tiffany">
+          <label for="tiffany">«Тиффани»</label>
+          <input type="checkbox" name="black" id="black">
+          <label for="black">Черный</label>
+          <input type="checkbox" name="pink" id="pink">
+          <label for="pink">Розовый</label>
+          <input type="checkbox" name="orange" id="orange">
+          <label for="orange">Оранжевый</label>
+        </fieldset>
+        <fieldset class="form-order__name">
+          <legend class="form-order__title">ФИО</legend>
+          <label for="first-name">Имя:</label>
+          <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
+          <label for="last-name">Фамилия:</label>
+          <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*" required>
+          <label for="patronymic">Отчество:</label>
+          <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+        </fieldset>
+        <fieldset class="form-order__phone">
+          <legend class="form-order__title">Тел</legend>
+          <input type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        </fieldset>
+        <fieldset class="form-order__email">
+          <legend class="form-order__title">E-mail</legend>
+          <input type="email" name="email" placeholder="Ваш Email*" required>
+        </fieldset>
+        <fieldset class="form-order__message">
+          <legend class="form-order__title">Доп</legend>
+          <textarea name="user-message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <small class="form-order__desc">*Поля обязательны для заполнения</small>
+        <button class="form-order__button button" type="submit">Отправить заказ</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML и CSS, уровень 2</span>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
