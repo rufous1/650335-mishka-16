@@ -1,0 +1,40 @@
+.product-types {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.product-types__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-types__item {
+  position: relative;
+
+  width: 320px;
+  margin: 0;
+  padding: 28px 0 28px 30px;
+}
+
+.product-types__item--style {
+  background-color: rgba(99, 209, 187, 1);
+}
+
+.product-types__item--toys {
+  background-color: rgba(86, 195, 178, 1);
+}
+
+.product-types__link {
+  display: block;
+  width: 130px;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+}

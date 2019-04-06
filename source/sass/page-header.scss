@@ -1,0 +1,19 @@
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+  padding: 22px 0 22px 86px;
+}
+
+.page-header__logo-image {
+  display: block;
+  width: 86px;
+  height: 35px;
+}
