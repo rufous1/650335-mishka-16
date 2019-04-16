@@ -1,0 +1,26 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 22px 39px;
+
+  border-top: 1px solid rgba(229, 229, 229, 1);
+}
+
+.copyright__text {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: $black;
+}
+
+.copyright__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__icon {
+  fill: $green;
+}

@@ -1,0 +1,29 @@
+@mixin button {
+  display: block;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(68, 68, 68, 1);
+  text-transform: uppercase;
+
+  border: 2px solid rgba(68, 68, 68, 1);
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 1);
+
+    background-color: rgba(68, 68, 68, 1);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@mixin heading {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+}

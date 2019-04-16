@@ -1,0 +1,36 @@
+.form-search {
+  display: flex;
+  align-items: center;
+}
+
+.form-search__input {
+  width: 214px;
+  margin: 0 0 0 26px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  border: none;
+  outline: none;
+
+  &:focus::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+  }
+
+  &::placeholder {
+    color: $black;
+  }
+}
+
+.form-search__label {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.form-search__icon {
+  vertical-align: top;
+
+  opacity: 0.2;
+}

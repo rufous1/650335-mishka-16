@@ -1,0 +1,36 @@
+.site-list {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-list__item {
+  padding: 28px 30px 28px 76px;
+  box-shadow: 0 1px 0 $grey, inset 0 1px 0 $grey;
+}
+
+.site-list__item--reset {
+  padding: 28px 30px 28px 30px;
+}
+
+.site-list__link {
+  display: block;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+}
+
+.site-list__icon {
+  vertical-align: middle;
+  margin: 0 20px 0 0;
+  opacity: 0.2;
+}
+
+.site-list--noactive {
+  display: none;
+}
+
+.site-list--active {
+  display: flex;
+}

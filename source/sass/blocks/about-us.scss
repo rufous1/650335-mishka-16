@@ -1,0 +1,94 @@
+.about-us {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 320px;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: 320px 6px;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.about-us__wrapper {
+  padding: 34px 30px 50px;
+}
+
+.about-us__title {
+  margin: 0;
+
+  @include heading;
+}
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about-us__item {
+  position: relative;
+
+  margin: 84px 0 0;
+}
+
+.about-us__icon {
+  position: absolute;
+
+  fill: $green;
+
+  &--flower {
+    bottom: 55px;
+    left: 9px;
+  }
+
+  &--price {
+    bottom: 65px;
+    left: 0;
+  }
+
+  &--heart {
+    bottom: 60px;
+    left: 7px;
+  }
+
+  &--yarn {
+    bottom: 60px;
+    left: 3px;
+  }
+
+  &--rocket {
+    bottom: 70px;
+    left: -6px;
+  }
+
+  &--pack {
+    bottom: 65px;
+    left: 3px;
+  }
+}
+
+.about-us__text {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $black;
+}

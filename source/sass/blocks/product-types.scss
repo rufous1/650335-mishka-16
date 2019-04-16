@@ -1,0 +1,38 @@
+.product-types__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-types__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-types__link--style {
+  padding: 21px 36px 20px 30px;
+
+  background-color: $green;
+}
+
+.product-types__link--toys {
+  padding: 22px 27px 22px 30px;
+
+  background-color: $dark-green;
+}
+
+.product-types__text {
+  width: 130px;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: $white;
+}
+
+.product-types__icon {
+  fill: rgba(20, 144, 128, 0.5);
+}

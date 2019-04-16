@@ -1,0 +1,26 @@
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 62px 27px 57px;
+}
+
+.social-list__link {
+  display: block;
+
+  &--instagram {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+  }
+}
